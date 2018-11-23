@@ -19,6 +19,7 @@ function test_primitive_2() {
     return 0;
 }
 
+/*
 primitive("test_primitive_take_2_add", "integer", "integer", "integer");
 function test_primitive_3() {
     var a = 100;
@@ -28,3 +29,4 @@ function test_primitive_3() {
     }
     return 0;
 }
+*/
