@@ -30,3 +30,5 @@ script:
 after_script:
   - echo "Uploading code coverage report"
   - coveralls --exclude third_party --exclude build/third_party --exclude build/CMakeFiles --gcov $(which $GCOV) --gcov-options '\-lp' --build-root build > /dev/null
+after_success: 
+  - bash <(curl -s https://codecov.io/bash)
